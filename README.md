@@ -41,7 +41,7 @@ For Azure Artifacts, copy below section and paste to pom.xml as I have shown in 
 ![image](https://github.com/user-attachments/assets/5b1b7103-e06b-49ca-8522-9da5c8484d08)
 ![image](https://github.com/user-attachments/assets/04b417a3-c738-4a7b-bab7-df23e16c471c)
 
-Provide Contibutor Access for Azure Artifacts as shown in screenshot below.
+Provide Contributor Access for Azure Artifacts as shown in screenshot below.
 
 ![image](https://github.com/user-attachments/assets/69d235a4-4d1d-4bcc-87d1-29c87629c5f2)
 ![image](https://github.com/user-attachments/assets/146adf49-5f7b-4f1f-a565-2a994e50561d)
