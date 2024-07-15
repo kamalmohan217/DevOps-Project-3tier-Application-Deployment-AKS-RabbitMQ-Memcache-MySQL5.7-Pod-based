@@ -55,6 +55,8 @@ In Dockerfile as shown above in the attached screen-shot, **docker-entrypoint-in
 I have created Service service Connection for SonarQube, Azure Artifacsts, Azure Container Registries and DockerHub Repository as shown below.
 ![image](https://github.com/user-attachments/assets/04bc97ba-5be1-4506-8f0e-33e8ed20360f)
 
+![image](https://github.com/user-attachments/assets/e5e0f56b-8624-43d3-bed7-cc26d8cb287d)
+
 Now Run the Azure Pipeline. Create the URL using ingress rule for service present in the file ingress-rule.yaml in this repository. Do the entry for this URL with Public IP in Record Set of Azure DNS Zone. Access the newly created URL and provide username admin_vp and password admin_vp.
 ![image](https://github.com/user-attachments/assets/835a265d-5248-4ae2-b492-e8d11af9c464)
 ![image](https://github.com/user-attachments/assets/b3099186-58a2-49f9-9c2f-eba79b7127aa)
@@ -66,5 +68,16 @@ When you click on the User for the first time it will get the values from MySQL 
 ![image](https://github.com/user-attachments/assets/85d59593-17c0-4281-bcf5-bfad4c82a77e)
 ![image](https://github.com/user-attachments/assets/f430e429-6586-4d28-926c-ba72091ae667)
 
+After running the Azure Pipeline Screenshots for RabbitMQ, SonarQube, Azure Artifacts are as shown in the Screenshot below.
 
+![image](https://github.com/user-attachments/assets/034e1384-004c-433a-a75d-03b88cae14bd)
+![image](https://github.com/user-attachments/assets/6ffb11a1-9f5c-475e-8f54-3102dd961b32)
+![image](https://github.com/user-attachments/assets/d7844231-1ec9-4a20-9d3c-6d517dc4acf8)
+![image](https://github.com/user-attachments/assets/f4af3bef-c12b-476d-8951-313fe306942a)
+![image](https://github.com/user-attachments/assets/61bc04b7-6d0c-4c4d-8a8b-492170a3a4e1)
 
+```
+Create secret in Kubernetes for DockerHub Repository access
+
+kubectl create secret docker-registry dockerhub-auth --docker-server=docker.io --docker-username=XXXXXXXXX --docker-password=XXXXXXXXX -n mysql
+```
