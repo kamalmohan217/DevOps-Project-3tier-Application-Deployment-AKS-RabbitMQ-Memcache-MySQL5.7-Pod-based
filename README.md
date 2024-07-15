@@ -27,4 +27,16 @@ Create Ingress rule using the rabbitmq-ingress-rule.yaml file as present in this
 ![image](https://github.com/user-attachments/assets/7dd2c517-e3a0-4a77-90c3-836cb8b72d82)
 ![image](https://github.com/user-attachments/assets/82c379f4-36ea-45b4-8e16-024433e87860)
 
+![image](https://github.com/user-attachments/assets/34e243b3-985c-483d-bc8c-f3361d825f05)
 
+The source code is present in Azure Repos. I have taken the Source Code present in GitHub Repository https://github.com/singhritesh85/Three-tier-WebApplication.git and did changes in pom.xml, Dockerfile, application.properties as shown below.
+
+![image](https://github.com/user-attachments/assets/20d8d1ac-b7c5-4ecd-850a-bc0ba766bfad)
+![image](https://github.com/user-attachments/assets/c027ad1c-8a88-4f56-838c-659ce79465e8)
+![image](https://github.com/user-attachments/assets/9ca4d1bb-0976-4293-841b-db7ba7b75917)
+![image](https://github.com/user-attachments/assets/19fde3a2-a1e2-464f-95d7-621c0cc25509)
+
+For Azure Artifacts, copy below section and paste to pom.xml as I have shown in above screenshot.
+
+![image](https://github.com/user-attachments/assets/5b1b7103-e06b-49ca-8522-9da5c8484d08)
+![image](https://github.com/user-attachments/assets/04b417a3-c738-4a7b-bab7-df23e16c471c)
