@@ -29,7 +29,7 @@ Create Ingress rule using the rabbitmq-ingress-rule.yaml file as present in this
 
 ![image](https://github.com/user-attachments/assets/34e243b3-985c-483d-bc8c-f3361d825f05)
 
-The source code is present in Azure Repos. I have taken the Source Code present in GitHub Repository https://github.com/singhritesh85/Three-tier-WebApplication.git and did changes in pom.xml, Dockerfile, application.properties as shown below.
+The source code is present in Azure Repos. I have taken the Source Code present in GitHub Repository https://github.com/kamalmohan217/Three-tier-WebApplication.git and did changes in pom.xml, Dockerfile, application.properties as shown below.
 
 ![image](https://github.com/user-attachments/assets/20d8d1ac-b7c5-4ecd-850a-bc0ba766bfad)
 ![image](https://github.com/user-attachments/assets/c027ad1c-8a88-4f56-838c-659ce79465e8)
@@ -45,3 +45,8 @@ Provide Contributor Access for Azure Artifacts as shown in screenshot below.
 
 ![image](https://github.com/user-attachments/assets/69d235a4-4d1d-4bcc-87d1-29c87629c5f2)
 ![image](https://github.com/user-attachments/assets/146adf49-5f7b-4f1f-a565-2a994e50561d)
+
+I have created a mysql image and kept it in Docker Hub Repository. While creating mysql pod I imported the .sql extension file db_backup.sql. The Dockerfile to achieve this is as shown below.
+
+![image](https://github.com/user-attachments/assets/0a7df3a3-2c4b-48c3-b85d-69275bc3635e)
+In Dockerfile as shown above in the attached screen-shot, **docker-entrypoint-initdb.d** directory contains the shell-script and .sql extension file which will get executed when container will be created for the first time. You can consider it as for keeping the bootstraping script.
