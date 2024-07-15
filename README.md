@@ -10,7 +10,7 @@ I have created RabbitMQ cluster with three kubernetes pods. Follow below procedu
 
 Create Azure DevOps pipeline for deployment of Tomcat Application Pods, RabbitMQ Pods, Memcached Pods and MySQL Pods using the azure-pipelines.yaml file prresent with this repository.
 ```
-Add a user and permission to the user in RabbitMQ. Assign Role for High Availability (HA)
+Add a user and permission to the user in RabbitMQ. Assign Role for High Availability (HA) using the commands as shown below.
 
 rabbitmqctl add_user test test
 rabbitmqctl set_user_tags test administrator
@@ -18,5 +18,9 @@ rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
 rabbitmqctl set_policy ha-all ".*" '{"ha-mode":"all","ha-sync-mode":"automatic"}' 
 ```
 ![image](https://github.com/user-attachments/assets/e4648891-b703-4efd-8bae-f76afd5b3256)
+
+Create Ingress rule using the rabbitmq-ingress-rule.yaml file as present in this repository and do the entry in Azure dns-zone for Hosts corresponding to IP Address as shown below.
+![image](https://github.com/user-attachments/assets/7dd2c517-e3a0-4a77-90c3-836cb8b72d82)
+![image](https://github.com/user-attachments/assets/82c379f4-36ea-45b4-8e16-024433e87860)
 
 
