@@ -50,3 +50,21 @@ I have created a mysql image and kept it in Docker Hub Repository. While creatin
 
 ![image](https://github.com/user-attachments/assets/0a7df3a3-2c4b-48c3-b85d-69275bc3635e)
 In Dockerfile as shown above in the attached screen-shot, **docker-entrypoint-initdb.d** directory contains the shell-script and .sql extension file which will get executed when container will be created for the first time. You can consider it as for keeping the bootstraping script.
+![image](https://github.com/user-attachments/assets/679ee830-2eb1-4c2e-a3a2-44ebd57f4146)
+
+I have created Service service Connection for SonarQube, Azure Artifacsts, Azure Container Registries and DockerHub Repository as shown below.
+![image](https://github.com/user-attachments/assets/04bc97ba-5be1-4506-8f0e-33e8ed20360f)
+
+Now Run the Azure Pipeline. Create the URL using ingress rule for service present in the file ingress-rule.yaml in this repository. Do the entry for this URL with Public IP in Record Set of Azure DNS Zone. Access the newly created URL and provide username admin_vp and password admin_vp.
+![image](https://github.com/user-attachments/assets/835a265d-5248-4ae2-b492-e8d11af9c464)
+![image](https://github.com/user-attachments/assets/b3099186-58a2-49f9-9c2f-eba79b7127aa)
+![image](https://github.com/user-attachments/assets/148f12e0-04fb-466e-9834-8e8b78b10bf7)
+![image](https://github.com/user-attachments/assets/baf0a179-943c-48f5-a511-200f90602ad1)
+
+When you click on the User for the first time it will get the values from MySQL Database and store it in Memcache, so that next time when you click on the same user it will provide the values from the Memcache itself.
+
+![image](https://github.com/user-attachments/assets/85d59593-17c0-4281-bcf5-bfad4c82a77e)
+![image](https://github.com/user-attachments/assets/f430e429-6586-4d28-926c-ba72091ae667)
+
+
+
