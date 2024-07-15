@@ -9,5 +9,14 @@ I have used terraform script as provided in this repository to create the Azure 
 I have created RabbitMQ cluster with three kubernetes pods. Follow below procedures to achieve the same.
 
 Create Azure DevOps pipeline for deployment of Tomcat Application Pods, RabbitMQ Pods, Memcached Pods and MySQL Pods using the azure-pipelines.yaml file prresent with this repository.
+```
+Add a user and permission to the user in RabbitMQ. Assign Role for High Availability (HA)
+
+rabbitmqctl add_user test test
+rabbitmqctl set_user_tags test administrator
+rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
+rabbitmqctl set_policy ha-all ".*" '{"ha-mode":"all","ha-sync-mode":"automatic"}' 
+```
+![image](https://github.com/user-attachments/assets/e4648891-b703-4efd-8bae-f76afd5b3256)
 
 
