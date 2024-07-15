@@ -81,3 +81,27 @@ Create secret in Kubernetes for DockerHub Repository access
 
 kubectl create secret docker-registry dockerhub-auth --docker-server=docker.io --docker-username=XXXXXXXXX --docker-password=XXXXXXXXX -n mysql
 ```
+
+```
+Create secret in Kubernetes for Azure Container Registries access
+
+kubectl create secret docker-registry devopsmelacr132827a7-auth --docker-server=https://akscontainer24registry.azurecr.io --docker-username=akscontainer24registry --docker-password=cXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXR -n backend
+```
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Source Code:-  https://github.com/kamalmohan217/Three-tier-WebApplication.git
+```
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+<br><br/>
+```
+Reference:-  https://github.com/logicopslab/vprofile-project.git
+```
